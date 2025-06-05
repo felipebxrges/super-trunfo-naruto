@@ -1,0 +1,24 @@
+.carta{
+    border: 5px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 40%;
+    height: 80%;
+    border-radius: 15px;
+}
+
+.carta1{
+    position: relative;
+}
+
+.carta2{
+    position: relative;
+}
+
+.carta img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
