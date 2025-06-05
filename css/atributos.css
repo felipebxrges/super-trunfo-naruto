@@ -1,0 +1,52 @@
+.atributos{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    margin-bottom: 7px;
+    border-radius: 10px;
+    background-color:var(--bege);
+    width: 80%;   
+}
+
+.atributos span{
+    float: right;
+    margin-right: 10px;
+}
+
+.carta1 .atributos{
+    position: absolute;
+}
+
+.carta2 .atributos{
+    position: absolute;
+}
+
+#atb::before{
+    display: inline-block;
+    content: "";
+    background-image: url("/img/star.png");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+
+#atb:hover{
+    transform: scale(1.06);
+    transition: transform 0.5s ease;
+}
+
+#atb{
+    font-size: 17px;
+    width: 100%;
+    font-family: "Naruto", sans-serif;
+    margin-top: 3px;
+    color: var(--preto);
+    
+}
+
+.display-none{
+    display: none;
+}
