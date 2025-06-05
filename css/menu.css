@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Naruto';
+    src: url('/fonte/njnaruto.ttf');
+}
+
+:root{
+    --vermelho: #9b0406;
+    --vermelho-escuro: #440300;
+    --preto: #111;
+    --bege: rgb(232, 226, 203);
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-image: url("https://narutodle.net/Background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+
+.botoes{
+    height: 80vh;
+}
+
+
+h1{
+    color: var(--vermelho);
+    font-family: "Naruto", sans-serif;
+    font-size: 50px;
+    text-shadow: 4px 7px 2px var(--vermelho-escuro);
+}
