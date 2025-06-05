@@ -1,0 +1,75 @@
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.botao{
+    background-image: url(/img/PngItem_1040486.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: transparent;
+    
+
+    width: 25px;  
+    height: 120px; 
+    border: none;
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    color: var(--vermelho);
+    font-family: "Naruto", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    
+    margin: 20px;
+
+    transition: width 0.6s ease, color 0.6s ease;
+}
+
+.botao::before{
+    display: inline-block;
+    content: "";
+    background-image: url("/img/star.png");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+.botao:hover{
+    width: 500px;
+}
+
+.botao:not(:hover){
+    color: transparent;
+}
+
+
+button{
+    padding: 5px;
+    border: none;
+    background: transparent;
+}
+
+button:hover{
+    transform: scale(1.5);
+    transition: all 0.5s ease;
+}
+
+#next-button {
+    transform: rotate(180deg);
+}
+
+#next-button:hover {
+    transform: rotate(180deg) scale(1.5);
+}
