@@ -22,7 +22,10 @@ let contUm = -1;
 
 btnNextJogadorUm.addEventListener('click', () =>{
     if(meuJogo.turnos == 0){
-        window.alert("jogo ja acabou");
+        if(meuJogo.jogadores[0].roundsGanhos >= 3)
+            window.alert("jogo ja acabou, voce ganhou");
+        else if(meuJogo.jogadores[1].roundsGanhos >= 3)
+            window.alert("jogo ja acabou, voce perdeu");
     }
     else if(clicou == false)
     {
@@ -33,9 +36,6 @@ btnNextJogadorUm.addEventListener('click', () =>{
 
         if(contUm > meuJogo.jogadores[0].cartas.length - 1)
             contUm = 0;
-
-        if(meuJogo.jogadores[0].cartas[contUm].supertrunfo)
-            divAtributo[0].classList.add('super-trunfo')
 
         if(meuJogo.jogadores[0].cartas[contUm].supertrunfo)
             divAtributo[0].classList.add('super-trunfo')
@@ -52,7 +52,10 @@ btnNextJogadorUm.addEventListener('click', () =>{
 
 btnPrevJogadorUm.addEventListener('click', () =>{
  if(meuJogo.turnos == 0){
-        window.alert("jogo ja acabou");
+        if(meuJogo.jogadores[0].roundsGanhos >= 3)
+            window.alert("jogo ja acabou, voce ganhou");
+        else if(meuJogo.jogadores[1].roundsGanhos >= 3)
+            window.alert("jogo ja acabou, voce perdeu");
     }
 else if(clicou == false){
         divAtributo[0].classList.remove('super-trunfo')

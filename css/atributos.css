@@ -45,6 +45,21 @@
     color: var(--preto);
 }
 
+.super-trunfo{
+    background-color: var(--supertrunfo);
+}
+
+.super-trunfo #nome-carta::before{
+     display: inline-block;
+    content: "";
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/013/743/136/small/golden-star-icon-png.png");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
 .display-none{
     display: none;
 }

@@ -3,6 +3,7 @@ export class Jogador{
         this.nome = nome
         this.cartas = []
         this.cartasCapturadas = []
+        this.roundsGanhos = 0;
     }
 
     adicionarCartas(carta){

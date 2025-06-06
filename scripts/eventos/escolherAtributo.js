@@ -21,11 +21,19 @@ atributos.forEach(atributo => {
 function verificaVencedorRound(){
     if(ehSuperTrunfo(meuJogo.jogadores[0])){
         capturarCartas(meuJogo.jogadores[0], meuJogo.jogadores[1])
-        window.alert("voce ganhou")
+        window.alert("voce ganhou o round")
+        meuJogo.jogadores[0].roundsGanhos++;
+        if( meuJogo.jogadores[0].roundsGanhos == 3)
+            console.log("voce ganhou o jogo");
+            
     }
     else if(ehSuperTrunfo(meuJogo.jogadores[1])){
         capturarCartas(meuJogo.jogadores[1], meuJogo.jogadores[0])
-        window.alert("voce perdeu")
+        window.alert("voce perdeu o round")
+        meuJogo.jogadores[1].roundsGanhos++;
+        if( meuJogo.jogadores[1].roundsGanhos == 3)
+            window.alert("voce perdeu o jogo");
+            
     }
     else
         compararAtributos(atbEscolhido)
@@ -36,10 +44,18 @@ function compararAtributos(atb){
     let atbAdversario = document.querySelector('.carta2 #' +atb.id)
     if(parseInt(atb.innerText) > parseInt(atbAdversario.innerText)){
         capturarCartas(meuJogo.jogadores[0], meuJogo.jogadores[1])
-        window.alert("voce ganhou")
+        window.alert("voce ganhou o round")
+        meuJogo.jogadores[0].roundsGanhos++;
+        if( meuJogo.jogadores[0].roundsGanhos == 3)
+            window.alert("voce ganhou o jogo");
+        
     }else{
         capturarCartas(meuJogo.jogadores[1], meuJogo.jogadores[0])
-        window.alert("voce perdeu")
+        window.alert("voce perdeu o round")
+        meuJogo.jogadores[1].roundsGanhos++;
+        if( meuJogo.jogadores[1].roundsGanhos == 3)
+            window.alert("voce perdeu o jogo");
+            
     }
 
 }
