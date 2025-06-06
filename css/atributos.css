@@ -6,19 +6,12 @@
     border-radius: 10px;
     background-color:var(--bege);
     width: 80%;   
+    position: absolute;
 }
 
 .atributos span{
     float: right;
     margin-right: 10px;
-}
-
-.carta1 .atributos{
-    position: absolute;
-}
-
-.carta2 .atributos{
-    position: absolute;
 }
 
 #atb::before{
@@ -32,6 +25,12 @@
     margin-left: 5px;
 }
 
+#nome-carta{
+    font-family: "Naruto", sans-serif;
+    align-self: center;
+    color: var(--preto);
+    font-size: 18px;
+}
 
 #atb:hover{
     transform: scale(1.06);
@@ -44,7 +43,6 @@
     font-family: "Naruto", sans-serif;
     margin-top: 3px;
     color: var(--preto);
-    
 }
 
 .display-none{
