@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Naruto';
-    src: url('./fonte/njnaruto.ttf');
+    src: url('/fonte/njnaruto.ttf');
 }
 
 :root{

@@ -1,0 +1,31 @@
+.footer{
+    background-color: var(--bege);
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    align-items: center;
+    font-family: "Naruto", sans-serif;
+    letter-spacing: 1px;
+}
+
+.nome-jogo h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.nome-alunos h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.emails h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
