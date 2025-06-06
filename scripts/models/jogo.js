@@ -1,5 +1,6 @@
 import { Carta } from "./carta.js";
-import { imagensCapturadas } from "../eventos/escolherAtributo.js";
+import { imgCartaJogadorUm } from "../eventos/escolherCarta.js";
+import { divAtributo } from "../eventos/escolherAtributo.js";
 
 export class Jogo{
     constructor(){
@@ -17,6 +18,7 @@ export class Jogo{
             new Carta("Kakashi", 150, 185, 175, 160, "img/personagens/kakashi.jpg"),
         ],
         this.turnos = 5;
+        this.cartaSuperTrunfo = null;
     }
 
     adicionarJogador(jogador){
@@ -50,9 +52,17 @@ export class Jogo{
         capturadasDois.innerHTML = ''
 
         this.embaralharCartas();
+        this.cartaSuperTrunfo.supertrunfo = false;
+        this.escolherSuperTrunfo();
         this.turnos = 5;
 
-        console.log(this.jogadores[0].cartas);
-        
+        imgCartaJogadorUm.src = "../../img/cartavirada.jpeg"
+        divAtributo[0].classList.add('display-none')
+    }
+
+    escolherSuperTrunfo(){
+        let indexSuperTrunfo = Math.floor(Math.random() * 10)
+        this.cartas[indexSuperTrunfo].supertrunfo = true;
+        this.cartaSuperTrunfo = this.cartas[indexSuperTrunfo];
     }
 }

@@ -9,10 +9,8 @@ const reiniciarBtn = document.querySelector('div.botao')
 meuJogo.adicionarJogador(new Jogador("Felipe"));
 meuJogo.adicionarJogador(new Jogador("Computador"));
 
-let indexSuperTrunfo = Math.floor(Math.random() * 10)
-meuJogo.cartas[indexSuperTrunfo].supertrunfo = true;
-
 meuJogo.embaralharCartas();
+meuJogo.escolherSuperTrunfo();
 
 reiniciarBtn.addEventListener('click', () =>{
     meuJogo.reiniciar();
