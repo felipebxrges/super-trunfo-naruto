@@ -1,0 +1,24 @@
+Objetivo da Interface: Fazer com que o usuário se sinta em um ambiente relacionado ao tema do jogo.
+
+Publico alvo: Fãs do anime Naruto e de quem gosta de jogo de cartas.
+
+Tema escolhido: anime Naruto, porque é um anime popular e os integrantes do grupo gostam do anime.
+
+Paleta e esquema de cores: Utilizamos tipos de tonalidades de vermelho pois são cores complementares para ajudar a fazer o sombreamento do título. Utilizamos a cor bege de fundo por ser uma cor neutra e fácil de contrastar, e a cor preta nas letras para padronizar.
+
+Tipografia: Utilizamos de uma fonte similar ao da logo do anime para que o jogador possa sentir que está em um jogo dedicado ao tema escolhido.
+
+Equilíbrio: A interface utiliza de um equilíbrio simétrico, respeitando a harmonia e o equilíbrio dentro dos elementos do site.
+Por exemplo, as divs respeitam um padrão de tamanho, como o Jogador1 e Jogador2 e o título com o "VS" centralizado.
+
+Proporção: Por ser uma interface de jogo de cartas, a proporção tende a ser maior nos elementos de título, cartas e dos atributos, possibilitando uma maior capacidade
+de compreensão das informações para o jogador. Os elementos principais são maiores que os elementos secundários.
+
+Ritmo: A interface tem um ritmo visual progressivo, utiliza de repetições planejadas que dão sensação de continuidade. Como por exemplo, os ícones de shuriken repetidos
+antes de cada atributo, a disposição dos atributos padronizadas.
+
+Unidade: A interface tem uma padronização de cores, fontes, espaçamento e estilos de imagens, garantindo que todos os elementos pertecem ao mesmo conjunto,
+colaborando para a unidade.
+
+Ênfase: A interface utiliza das cores, tamanho e posicionamento para dar mais ênfase nos elementos. Por exemplo, o título "SUPER TRUNFO NINJA" acima de cada página,
+a proporção de cada carta dos jogadores, o tamanho e posicionamento dos atributos, etc. A utilização do "VS" dando ênfase em ser um combate entre cartas.
